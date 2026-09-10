@@ -1,0 +1,27 @@
+package com.mycompany.m2exer7;
+
+import java.util.Scanner;
+
+public class M2exer7 {
+public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    
+    System.out.print("Enter account holder: ");
+    String accountHolder = input.nextLine();
+    
+    System.out.print("Enter account number: ");
+    String accountNumber = input.nextLine();
+    
+    System.out.print("Enter account type: ");
+    String accountType = input.nextLine();
+    
+    System.out.print("Enter balance: ");
+    double balance = input.nextDouble();
+    
+    System.out.println("\n--- bank account record ---");
+    System.out.println("account holder: " + accountHolder);
+    System.out.println("account number: " + accountNumber);
+    System.out.println("account type: " + accountType);
+    System.out.printf("balance: PHP %.2f%n", balance);
+}
+}
