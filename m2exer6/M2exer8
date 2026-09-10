@@ -1,0 +1,32 @@
+package com.mycompany.m2exer8;
+
+import java.util.Scanner;
+
+public class M2exer8 {
+public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+   
+    System.out.print("Enter student name: ");
+    String studentName = input.nextLine();
+    
+    System.out.print("Enter subject code: ");
+    String subjectCode = input.nextLine();
+    
+    System.out.print("Enter subject title: ");
+    String subjectTitle = input.nextLine();
+    
+    System.out.print("Enter units: ");
+    int units = input.nextInt();
+    input.nextLine(); // Consumes the remaining newline character
+    
+    System.out.print("Enter section letter: ");
+    char sectionLetter = input.nextLine().charAt(0);
+    
+    System.out.println("\n--- course enrollment record ---");
+    System.out.println("student name: " + studentName);
+    System.out.println("subject code: " + subjectCode);
+    System.out.println("subject title: " + subjectTitle);
+    System.out.println("units: " + units);
+    System.out.println("section letter: " + sectionLetter);
+}
+}
